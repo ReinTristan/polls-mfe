@@ -1,0 +1,105 @@
+/*
+ * The single source of truth for every visual value in the system.
+ *
+ * Values live here and only here. `index.ts` exports the NAMES of these
+ * variables, not copies of the values: that way there are no two sources that
+ * can drift apart, and a theme change propagates through custom property
+ * inheritance — live, no reload — to all three microfrontends at once,
+ * whatever styling strategy each one uses.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --polls-color-bg: #f6f6f8;
+  --polls-color-surface: #ffffff;
+  --polls-color-surface-sunken: #eeeef2;
+
+  /* Text */
+  --polls-color-text: #18181b;
+  --polls-color-text-muted: #61616b;
+  --polls-color-text-on-accent: #ffffff;
+
+  /* Borders */
+  --polls-color-border: #e2e2e8;
+  --polls-color-border-strong: #c2c2cc;
+
+  /* Accent */
+  --polls-color-accent: #4f46e5;
+  --polls-color-accent-hover: #423ac9;
+  --polls-color-accent-subtle: #eef0fe;
+
+  /* State */
+  --polls-color-focus: #4f46e5;
+  --polls-color-danger: #c0332e;
+  --polls-color-success: #1a7f4b;
+
+  /* Spacing — 4 px scale */
+  --polls-space-1: 0.25rem;
+  --polls-space-2: 0.5rem;
+  --polls-space-3: 0.75rem;
+  --polls-space-4: 1rem;
+  --polls-space-5: 1.5rem;
+  --polls-space-6: 2rem;
+  --polls-space-7: 3rem;
+  --polls-space-8: 4rem;
+
+  /* Typography */
+  --polls-font-family-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", roboto, sans-serif;
+  --polls-font-family-mono: ui-monospace, "SF Mono", "Cascadia Code", menlo, monospace;
+  --polls-font-size-xs: 0.75rem;
+  --polls-font-size-sm: 0.875rem;
+  --polls-font-size-md: 1rem;
+  --polls-font-size-lg: 1.25rem;
+  --polls-font-size-xl: 1.5rem;
+  --polls-font-size-2xl: 2rem;
+  --polls-font-weight-regular: 400;
+  --polls-font-weight-medium: 500;
+  --polls-font-weight-bold: 700;
+  --polls-line-height-tight: 1.2;
+  --polls-line-height-normal: 1.5;
+
+  /* Radii */
+  --polls-radius-sm: 4px;
+  --polls-radius-md: 8px;
+  --polls-radius-lg: 16px;
+  --polls-radius-full: 9999px;
+
+  /* Shadows */
+  --polls-shadow-sm: 0 1px 2px rgb(24 24 27 / 6%);
+  --polls-shadow-md: 0 4px 12px rgb(24 24 27 / 10%);
+  --polls-shadow-lg: 0 12px 32px rgb(24 24 27 / 14%);
+
+  /* Motion */
+  --polls-duration-fast: 120ms;
+  --polls-duration-normal: 220ms;
+  --polls-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --polls-color-bg: #141417;
+  --polls-color-surface: #1c1c21;
+  --polls-color-surface-sunken: #0f0f12;
+
+  --polls-color-text: #f2f2f5;
+  --polls-color-text-muted: #a1a1ad;
+  --polls-color-text-on-accent: #ffffff;
+
+  --polls-color-border: #2e2e36;
+  --polls-color-border-strong: #45454f;
+
+  --polls-color-accent: #8b83ff;
+  --polls-color-accent-hover: #a29bff;
+  --polls-color-accent-subtle: #23213a;
+
+  --polls-color-focus: #8b83ff;
+  --polls-color-danger: #f0837d;
+  --polls-color-success: #55c98c;
+
+  --polls-shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --polls-shadow-md: 0 4px 12px rgb(0 0 0 / 50%);
+  --polls-shadow-lg: 0 12px 32px rgb(0 0 0 / 60%);
+}
