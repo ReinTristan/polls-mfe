@@ -1,0 +1,6 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'services/*'
+minimumReleaseAgeExclude:
+  - fastify@5.12.4
