@@ -1,6 +1,11 @@
 # SPEC 01 — Monorepo foundations
 
-> Status: implemented · Depends on: nothing · Unlocks: SPEC 02
+> Status: **done** (2026-09-12) · Depends on: nothing · Unlocks: SPEC 02
+>
+> All acceptance criteria met and verified against the committed tree: clean install from
+> scratch, clean lint, a deliberately written forbidden import rejected with the expected
+> message, zero runtime dependencies in `contracts`, and the 45 tokens matching one to one
+> between `tokens.css` and `index.ts`.
 
 ## Objective
 
