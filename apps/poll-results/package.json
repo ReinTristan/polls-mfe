@@ -1,0 +1,10 @@
+{
+  "name": "@polls/poll-results",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@polls/contracts": "workspace:*",
+    "@polls/tokens": "workspace:*"
+  }
+}
