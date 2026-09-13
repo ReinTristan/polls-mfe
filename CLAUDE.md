@@ -51,7 +51,7 @@ Rule of thumb: if a reviewer who was not in the room will read it, it is English
 | Package manager | pnpm workspaces |
 | Bundler | Vite + `@module-federation/vite` |
 | Framework | React 19 |
-| Routing | React Router v7, declarative, **host only** |
+| Routing | React Router v8, declarative, **host only** |
 | Local state | Jotai in `poll-vote`; `useState` in `poll-list` |
 | Backend | Fastify + Postgres + `@fastify/websocket` |
 | Event bus | **Hand-written** on `CustomEvent`. No library. |
