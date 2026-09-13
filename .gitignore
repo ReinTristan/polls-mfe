@@ -10,3 +10,5 @@ dist/
 *.log
 
 .vscode/
+.claude/
+.agents/
