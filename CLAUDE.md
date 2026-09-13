@@ -56,7 +56,7 @@ Rule of thumb: if a reviewer who was not in the room will read it, it is English
 | Backend | Fastify + Postgres + `@fastify/websocket` |
 | Event bus | **Hand-written** on `CustomEvent`. No library. |
 | Lint and formatting | Biome ≥ 2.2 (JS, TS, CSS). **No ESLint, no Prettier, no oxlint.** |
-| Testing | Vitest (unit) + Playwright (integration) |
+| Testing | Vitest **browser mode** (unit, real browser, no jsdom) + Playwright (integration, against the served host) |
 | Deploy | Railway, one module per subdomain |
 
 ## Architecture rules (non-negotiable)
